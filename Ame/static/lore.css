@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Anta", sans-serif;
+}
+/*darkening image with a layer of kinda dark colour*/
+body{
+  min-height:100vh;
+  background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/john-fowler-7Ym9rpYtSdA-unsplash\ \(1\).png) ;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:20px 100px;
+  background: transparent;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index:100;
+}
+
+.navbar a{
+  position:relative;
+  font-size: 18px;
+  color:aliceblue;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before{
+   content: '';
+   position:absolute;
+   top:100%;
+   left:0;
+   width:0;
+   height:2px;
+   background:#fff;
+   transition: .3s;
+}
+
+.navbar a:hover::before{
+  width:100%;
+}
+
+.fake1{
+color:white;
+font-size: 47px;
+position:absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -400%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.real ::before{
+color:white;   
+}
+.fake1 :hover::before{
+color:#BCC6CC;
+transition:.3s;
+filter: drop-shadow( 2px 5px 5px rgba(120, 160, 131, 100));
+}
+.fake2 :hover::before{
+color:#BCC6CC;
+transition:.3s;
+filter: drop-shadow( 2px 5px 5px rgba(120, 160, 131, 100));
+}
+.real :hover::before{
+color:#abf2e2;
+transition:.3s;
+filter: drop-shadow( 5px 5px 5px rgba(120, 160, 131, 100));
+}
+.fake2{
+color:white;
+font-size: 47px;
+position:absolute;
+left: 50%;
+top: 50%;
+transform: translate(-300%, -300%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.real{
+color:white;
+font-size: 47px;
+position:absolute;
+left: 50%;
+top: 50%;
+transform: translate(200%, -250%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/*Between Text*/
+
+.TxT {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 90px;
+  /* text-transform: uppercase; */
+  font-family: 'Anta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: gray;
+  outline: none;
+  text-align: center;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+ .Lore{
+  line-height: 150%;
+  text-align: center;
+  color: Grey;
+  letter-spacing: .5px;
+}
+
+.Quote{
+  color: Grey;
+  text-align: right;
+  line-height: 150%;
+  letter-spacing: .5px;
+}
+
+/* .Maintxt {
+  background-color: transparent;
+  width:600px;
+  margin-left: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .Maintxt> .Subtxt {
+  background-color: transparent;
+  width:600px;
+  margin-left: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+/* Button
+.container {
+width: 400px;
+height: 400px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -10%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.center {
+width: 180px;
+height: 60px;
+position: absolute;
+}
+
+.btn {
+width: 180px;
+height: 60px;
+cursor: pointer;
+background: transparent;
+border: 1px solid #91C9FF;
+outline: none;
+transition: 1s ease-in-out;
+}
+
+svg {
+position: absolute;
+left: 0;
+top: 0;
+fill: none;
+stroke: #fff;
+stroke-dasharray: 150 480;
+stroke-dashoffset: 150;
+transition: 1s ease-in-out;
+}
+
+.btn:hover {
+transition: 1s ease-in-out;
+background: #4F95DA;
+}
+
+.btn:hover svg {
+stroke-dashoffset: -480;
+}
+
+.btn span {
+color: white;
+font-size: 18px;
+font-weight: 100;
+} */
+
+
+
+

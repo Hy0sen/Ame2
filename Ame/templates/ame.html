@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ame.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <!-- <a href="#">Lore</a>
+            <a href="#">Code</a>
+            <a href="/ame">Surprise</a> -->
+        </nav>
+    </header>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <p>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            I believe not,
+                            In a timely concurrence;
+                            for it is an unexpected phenomenon,
+                            to be able to feel love;
+                            -whilst being numb.
+                            Those who seek may not obtain,
+                            whilst the ones who abstain may discover its worth.
+                        </p>
+                        <p>
+                            It is but a chance;
+                            given to us, to seize or to ignore,
+                            Many have grasped many have thrown
+                            Many have gauged many have grown
+                            Often unrequited often reciprocated
+                            The most uncertain variable that I have ever known
+                        </p>
+                        <p>
+                            Yet,... I have managed to find a method,
+                            to resolve this mysterious piece of unknown.
+                            Because within you I have found a piece of me-
+                            that I thought I had lost;
+                            but in reality it is something I had never truly known.
+                            Hopefully your rain is over, if  not I will wait for it to go;
+                            Reason for this ballad of mine--
+                            I love you
+                            And I want to be yours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
